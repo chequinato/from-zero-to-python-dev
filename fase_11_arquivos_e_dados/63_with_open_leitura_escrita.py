@@ -3,7 +3,7 @@
 
 # Escrevendo em um arquivo
 
-with open("arquivo.txt", "r") as arquivo:
+with open("arquivo.txt", "w") as arquivo:
     arquivo.write("Miguel\n")
     arquivo.write("João\n")
     arquivo.write("Ana\n")
@@ -22,8 +22,8 @@ with open("arquivo.txt", "r") as arquivo:
 
 # Lendo as linhas como lista
 
-with open("nomes.txt", "a") as arquivo:
-    linhas = arquivo.readlines()
+with open("nomes.txt", "r") as arquivo:
+    linhas = arquivo.readlines() # Lê todo o conteúdo do arquivo aberto e transforma em strings
     print(linhas) # ['Miguel\n', 'João\n', 'Ana\n']
 
 # Adicionando sem apagar (append)
